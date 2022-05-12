@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(166, 196, 223);
+}
+.nav-left {
+  display: flex;
+  margin-left: 20px;
+}
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  width: 600px;
+}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+
 const Login = () => {
   const [showSignUp, setShowSignUp] = useState(false);
 
@@ -34,13 +36,15 @@ const Login = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <input
+                  <Link to="/home" className="form-control btn btn-primary">
+                    Login as a user
+                  </Link>
+                  {/* <input
                     type="submit"
                     className="form-control btn btn-primary"
                     value="Login as a user"
-                    placeholder="Password"
-                    id="password"
-                  />
+                    onClick={loginFn}
+                  /> */}
                 </div>
                 <div
                   className="signup-btn text-center text-info"
@@ -69,13 +73,15 @@ const Login = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <input
+                  <Link to="/home" className="form-control btn btn-primary">
+                    Signup as a user
+                  </Link>
+                  {/* <input
                     type="submit"
                     className="form-control btn btn-primary"
                     value="Sign up as a user"
-                    placeholder="Password"
-                    id="password"
-                  />
+                    
+                  /> */}
                 </div>
                 <div
                   className="signup-btn text-center text-info"
